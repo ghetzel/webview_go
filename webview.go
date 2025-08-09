@@ -32,10 +32,10 @@ import (
 	"sync"
 	"unsafe"
 
-	_ "github.com/webview/webview_go/libs/mswebview2"
-	_ "github.com/webview/webview_go/libs/mswebview2/include"
-	_ "github.com/webview/webview_go/libs/webview"
-	_ "github.com/webview/webview_go/libs/webview/include"
+	_ "github.com/ghetzel/webview_go/libs/mswebview2"
+	_ "github.com/ghetzel/webview_go/libs/mswebview2/include"
+	_ "github.com/ghetzel/webview_go/libs/webview"
+	_ "github.com/ghetzel/webview_go/libs/webview/include"
 )
 
 func init() {
@@ -92,7 +92,7 @@ type WebView interface {
 
 	// Navigate navigates webview to the given URL. URL may be a properly encoded data.
 	// URI. Examples:
-	// w.Navigate("https://github.com/webview/webview")
+	// w.Navigate("https://github.com/ghetzel/webview")
 	// w.Navigate("data:text/html,%3Ch1%3EHello%3C%2Fh1%3E")
 	// w.Navigate("data:text/html;base64,PGgxPkhlbGxvPC9oMT4=")
 	Navigate(url string)
